@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.VehicalListActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/lyt_top"
+            android:layout_above="@+id/lyt_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="30dp">
+
+                            <ImageView
+                                android:id="@+id/imgBack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_back_black_color" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/my_vehicles"
+                                android:textColor="#41527E"
+                                android:textSize="20sp"
+                                android:textStyle="bold"></TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="30dp">
+
+
+                            <androidx.recyclerview.widget.RecyclerView
+                                android:id="@+id/rvVehicalList"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="gone"
+                                android:longClickable="true"/>
+
+                            <TextView
+                                android:id="@+id/txtNoVehical"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_centerInParent="true"
+                                android:layout_marginBottom="20dp"
+                                android:fontFamily="@font/poppins"
+                                android:gravity="center"
+                                android:padding="10dp"
+                                android:text="@string/no_vehicle_added"
+                                android:textColor="#1D2E5B"
+                                android:textSize="18sp"
+                                android:visibility="visible"></TextView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lyt_bottom"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:id="@+id/txthint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppins"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/click_to_select"
+                android:textColor="#C2C2C2"
+                android:textSize="16sp"></TextView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cdAddV"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txthint"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="8dp"
+               >
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_orange"
+                    android:fontFamily="@font/raleway_medium"
+                    android:padding="10dp"
+                    android:text="@string/add_vehicle"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFF"
+                    android:textSize="16sp"></Button>
+
+            </androidx.cardview.widget.CardView>
+
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.CompleteDeliveryActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="40dp">
+
+                            <ImageView
+                                android:id="@+id/imgBack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_back_black_color" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="Select Food Recipient"
+                                android:textColor="#41527E"
+                                android:textSize="20sp"
+                               ></TextView>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="30dp"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:padding="10dp"
+                                android:background="@drawable/curve_grey">
+
+                                <RadioButton
+                                    android:id="@+id/rdCustomer"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:checked="true"
+                                    android:buttonTint="@color/green"
+                                   />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="Varsha Krishnani ( Customer )"
+                                    android:layout_gravity="center"
+                                    android:textColor="#1D2E5B"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/rdCustomer"
+                                    android:textSize="13sp"/>
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:padding="10dp"
+                                android:background="@drawable/curve_grey">
+
+                                <RadioButton
+                                    android:id="@+id/rdHouseMate"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:buttonTint="@color/green"
+
+                                    />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="HouseMate"
+                                    android:layout_gravity="center"
+                                    android:textColor="#1D2E5B"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/rdHouseMate"
+                                    android:textSize="13sp"/>
+
+
+
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:padding="10dp"
+                                android:background="@drawable/curve_grey">
+
+                                <RadioButton
+                                    android:id="@+id/rdDoorman"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:buttonTint="@color/green"
+
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="Doorman"
+                                    android:layout_gravity="center"
+                                    android:textColor="#1D2E5B"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/rdDoorman"
+                                    android:textSize="13sp"/>
+
+
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:padding="10dp"
+                                android:background="@drawable/curve_grey">
+
+                                <RadioButton
+                                    android:id="@+id/rdSomeoneelse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:buttonTint="@color/green"
+
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="Someone else"
+                                    android:layout_gravity="center"
+                                    android:textColor="#1D2E5B"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/rdSomeoneelse"
+                                    android:textSize="13sp"/>
+
+
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:padding="10dp"
+                                android:background="@drawable/curve_grey">
+
+                                <RadioButton
+                                    android:id="@+id/rdLefthome"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:buttonTint="@color/green"
+
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="Left outside home"
+                                    android:layout_gravity="center"
+                                    android:textColor="#1D2E5B"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/rdLefthome"
+                                    android:textSize="13sp"/>
+
+
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:padding="10dp"
+                                android:background="@drawable/curve_grey">
+
+                                <RadioButton
+                                    android:id="@+id/rdRefuse"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:buttonTint="@color/green"
+
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="Customer Refused the Order"
+                                    android:layout_gravity="center"
+                                    android:textColor="#1D2E5B"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/rdRefuse"
+                                    android:textSize="13sp"/>
+
+
+
+
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="15dp"
+                                android:layout_marginVertical="10dp"
+                                android:padding="10dp"
+                                android:background="@drawable/curve_grey">
+
+                                <RadioButton
+                                    android:id="@+id/rdUnbleFindLoc"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="10dp"
+                                    android:buttonTint="@color/green"
+
+                                    />
+
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:text="Unable to find the Location"
+                                    android:layout_gravity="center"
+                                    android:textColor="#1D2E5B"
+                                    android:layout_marginLeft="20dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/rdUnbleFindLoc"
+                                    android:textSize="13sp"/>
+
+
+
+
+                            </RelativeLayout>
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="40dp"
+                app:cardCornerRadius="8dp">
+
+                <Button
+                    android:id="@+id/btn_submit"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/border_orange"
+                    android:fontFamily="@font/raleway_medium"
+                    android:padding="10dp"
+                    android:text="Update Delivery Status"
+                    android:textAllCaps="false"
+                    android:textColor="#FFFF"
+                    android:textSize="16sp"></Button>
+
+            </androidx.cardview.widget.CardView>
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.AddVehicalActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/rlTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="40dp">
+                            <ImageView
+                                android:id="@+id/imgBack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_back_black_color"
+                                />
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/new_vehicle"
+                                android:textColor="#41527E"
+                                android:textSize="20sp"
+                                />
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:orientation="vertical">
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlVehicalInfo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="5dp"
+                                android:background="@drawable/curve_grey"
+                                android:padding="8dp">
+
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cdVehicalType"
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp"
+                                    android:layout_centerVertical="true"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardBackgroundColor="#E8E8E8"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardElevation="1dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:text="@string/vehical_type_t"
+                                        android:textColor="#7A7A7A"
+                                        android:textSize="14sp" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_centerVertical="true"
+                                    android:layout_toRightOf="@+id/cdVehicalType"
+                                    android:padding="5dp">
+
+<!--                                    <Spinner-->
+<!--                                        android:id="@+id/spVehicalType"-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:background="@null"-->
+<!--                                        android:entries="@array/arrayVehicalType" />-->
+
+                                    <EditText
+                                        android:id="@+id/edVehicalType"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins"
+                                        android:hint="@string/vehical_type_h"
+                                        android:inputType="textCapWords"
+                                        android:maxLength="30"
+                                        android:background="@null"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="16sp" />
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_down1" />
+
+                            </RelativeLayout>
+
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlVehicalName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="5dp"
+                                android:background="@drawable/curve_grey"
+                                android:padding="8dp">
+
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cdVehicalName"
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp"
+                                    android:layout_centerVertical="true"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardBackgroundColor="#E8E8E8"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardElevation="1dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:text="@string/make_model"
+                                        android:textColor="#7A7A7A"
+                                        android:textSize="14sp" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_toRightOf="@+id/cdVehicalName"
+                                    android:padding="5dp">
+<!--                                    <Spinner-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:id="@+id/spVehicalName"-->
+<!--                                        android:background="@null"-->
+<!--                                        android:entries="@array/arrayVehicalName"/>-->
+                                    <EditText
+                                        android:id="@+id/edVehicalModel"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:background="@null"
+                                        android:fontFamily="@font/poppins"
+                                        android:hint="@string/vehical_model_h"
+                                        android:inputType="textCapWords"
+                                        android:maxLength="30"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="16sp" />
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:visibility="gone"
+                                    android:src="@drawable/ic_down1" />
+
+                            </RelativeLayout>
+
+
+                            <RelativeLayout
+                                android:id="@+id/rlVehicalNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="5dp"
+                                android:background="@drawable/curve_grey"
+                                android:padding="8dp">
+
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cdVehicalNo"
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp"
+                                    android:layout_centerVertical="true"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardBackgroundColor="#E8E8E8"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardElevation="1dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:text="@string/vehical_no_t"
+                                        android:textColor="#7A7A7A"
+                                        android:textSize="14sp" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_toRightOf="@+id/cdVehicalNo"
+                                    android:padding="5dp">
+                                    <EditText
+                                        android:id="@+id/edtVehicalNo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins"
+                                        android:hint="@string/vehical_no_h"
+                                        android:inputType="text|textCapCharacters"
+                                        android:maxLength="15"
+                                        android:background="@null"
+                                        android:textAllCaps="true"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlVehicalChesesNo"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginVertical="5dp"
+                                android:background="@drawable/curve_grey"
+                                android:padding="8dp">
+
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cdVehicalChesesNo"
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp"
+                                    android:layout_centerVertical="true"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardBackgroundColor="#E8E8E8"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardElevation="1dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:text="@string/chesis_no_t"
+                                        android:textColor="#7A7A7A"
+                                        android:textSize="14sp" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_toRightOf="@+id/cdVehicalChesesNo"
+                                    android:padding="5dp">
+                                    <EditText
+                                        android:id="@+id/edtCheseNo"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins"
+                                        android:hint="@string/chesis_no_t"
+                                        android:inputType="text|textCapCharacters"
+                                        android:maxLength="30"
+                                        android:background="@null"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                     />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:id="@+id/rlVehicalColor"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginTop="5dp"
+                                android:layout_marginBottom="30dp"
+                                android:background="@drawable/curve_grey"
+                                android:padding="8dp">
+
+
+
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/cdVehicalColor"
+                                    android:layout_width="76dp"
+                                    android:layout_height="56dp"
+                                    android:layout_centerVertical="true"
+                                    app:cardCornerRadius="10dp"
+                                    app:cardBackgroundColor="#E8E8E8"
+                                    android:layout_marginLeft="10dp"
+                                    app:cardElevation="1dp">
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:layout_gravity="center"
+                                        android:text="@string/vehicle_color_t"
+                                        android:textColor="#7A7A7A"
+                                        android:textSize="14sp" />
+
+                                </androidx.cardview.widget.CardView>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginLeft="25dp"
+                                    android:layout_toRightOf="@+id/cdVehicalColor"
+                                    android:padding="5dp">
+<!--                                    <Spinner-->
+<!--                                        android:layout_width="wrap_content"-->
+<!--                                        android:layout_height="wrap_content"-->
+<!--                                        android:id="@+id/spVehicalColor"-->
+<!--                                        android:background="@null"-->
+<!--                                        android:entries="@array/arrayVehicalColor"/>-->
+                                    <EditText
+                                        android:id="@+id/edVehicalColor"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:fontFamily="@font/poppins"
+                                        android:hint="@string/vehical_color_t"
+                                        android:inputType="textCapSentences"
+                                        android:maxLength="30"
+                                        android:background="@null"
+                                        android:textColor="@color/black"
+                                        android:textColorHint="@color/grey"
+                                        android:textSize="16sp" />
+
+                                </RelativeLayout>
+
+                                <ImageView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:layout_marginRight="10dp"
+                                    android:src="@drawable/ic_down1"
+                                    android:visibility="gone" />
+
+                            </RelativeLayout>
+
+
+
+
+
+                        </LinearLayout>
+
+
+
+                    </LinearLayout>
+                    <RelativeLayout
+                        android:layout_below="@+id/rlTop"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentBottom="true">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/cdAddV"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="48dp"
+                            app:cardCornerRadius="8dp">
+
+                            <Button
+                                android:id="@+id/btn_submit"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/border_orange"
+                                android:fontFamily="@font/raleway_semibold"
+                                android:padding="10dp"
+                                android:text="@string/add_vehicle"
+                                android:textAllCaps="false"
+                                android:textColor="#FFFF"
+                                android:textSize="14sp"></Button>
+
+                        </androidx.cardview.widget.CardView>
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:padding="10dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="20dp"
+                            android:fontFamily="@font/poppins"
+                            android:paddingHorizontal="20dp"
+                            android:gravity="center"
+                            android:text="@string/add_vehicle_desc"
+                            android:textColor="#666666"
+                            android:layout_below="@+id/cdAddV"
+                            android:textSize="16sp"
+                            ></TextView>
+
+                    </RelativeLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

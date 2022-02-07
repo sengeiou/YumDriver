@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_weight="1"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/need_permission"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <ImageView
+        android:id="@+id/imgClose"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_weight="1"
+        android:src="@drawable/ic_close" />
+
+
+    <TextView
+        android:id="@+id/txtText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_dia"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/raleway_medium"
+        android:justificationMode="inter_word"
+        android:text="@string/permission_text"
+        android:textColor="@color/black"
+        android:textSize="14dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/raleway_medium"
+        android:justificationMode="inter_word"
+        android:text="\u2022  Deseos Delivery Partner Collects the Location data to enable users to see his delivery boy current location to track the live tracking of his order even the app is closed or not in use."
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:fontFamily="@font/raleway_medium"
+        android:justificationMode="inter_word"
+        android:text="\u2022  Yum Driver collects driver current location in background when app is closed or is in background to track the user their order."
+        android:textColor="@color/black"
+        android:textSize="14dp"
+        android:visibility="gone" />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtText"
+        android:layout_margin="10dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+
+        <Button
+            android:id="@+id/btn_no"
+            android:layout_width="0dp"
+            android:layout_height="30dp"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@color/grey"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="@string/disagree"
+            android:textAllCaps="false"
+            android:textColor="@android:color/white"
+            android:textStyle="bold"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_yes"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_weight="1"
+            android:background="@drawable/bg_button"
+            android:fontFamily="@font/raleway_semibold"
+            android:text="@string/agree"
+            android:textAllCaps="false"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+
+</RelativeLayout>

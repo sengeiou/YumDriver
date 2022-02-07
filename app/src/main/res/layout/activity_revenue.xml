@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.RevenueActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="20dp"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginTop="30dp">
+
+                            <ImageView
+                                android:id="@+id/imgBack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_back_black_color" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/revenue_details"
+                                android:textColor="#1D2E5B"
+                                android:textSize="20sp"
+                                android:textStyle="bold"></TextView>
+
+                        </RelativeLayout>
+
+                        <LinearLayout
+                            android:id="@+id/llCard"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingVertical="10dp"
+                            android:gravity="center_horizontal"
+                            android:orientation="horizontal">
+
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdDaily"
+                                android:layout_width="96dp"
+                                android:layout_height="96dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginLeft="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="1dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlDaily"
+                                    android:background="@drawable/card_bg_orange_filled"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+
+                                    <TextView
+                                        android:id="@+id/txtDaily"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:layout_centerInParent="true"
+                                        android:text="@string/daily"
+                                        android:textColor="@color/white"
+                                        android:textSize="14sp" />
+
+                                </RelativeLayout>
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdWeekly"
+                                android:layout_width="96dp"
+                                android:layout_height="96dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginLeft="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="1dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlWeekly"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@drawable/card_bg_not_select">
+
+
+                                    <TextView
+                                        android:id="@+id/txtWeekly"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:text="@string/weekly"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </RelativeLayout>
+
+
+                            </androidx.cardview.widget.CardView>
+
+                            <androidx.cardview.widget.CardView
+                                android:id="@+id/cdMonthly"
+                                android:layout_width="96dp"
+                                android:layout_height="96dp"
+                                android:layout_centerVertical="true"
+                                android:layout_marginHorizontal="5dp"
+                                android:layout_marginLeft="5dp"
+                                app:cardCornerRadius="20dp"
+                                app:cardElevation="1dp">
+
+                                <RelativeLayout
+                                    android:id="@+id/rlMonthly"
+                                    android:background="@drawable/card_bg_not_select"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent">
+
+
+                                    <TextView
+                                        android:id="@+id/txtMonthly"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins"
+                                        android:gravity="center"
+                                        android:layout_centerInParent="true"
+                                        android:text="@string/monthly"
+                                        android:textColor="@color/black"
+                                        android:textSize="14sp" />
+
+                                </RelativeLayout>
+
+
+
+                            </androidx.cardview.widget.CardView>
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/txtDate"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginVertical="16dp"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/poppins"
+                            android:gravity="center"
+                            android:text=""
+                            android:textColor="#FF5A5F"
+                            android:textSize="16sp" />
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingVertical="20dp"
+                            android:orientation="vertical"
+                            android:background="@drawable/curve_grey">
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="14dp"
+                                android:paddingHorizontal="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:gravity="center"
+                                    android:text="@string/total_trip"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalTrip"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins"
+                                    android:gravity="center"
+                                    android:text="$00"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:visibility="gone"
+                                android:paddingHorizontal="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:gravity="center"
+                                    android:text="GoodFood Frees "
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins"
+                                    android:gravity="center"
+                                    android:text="(-) $36.00"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:visibility="gone"
+                                android:paddingHorizontal="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:gravity="center"
+                                    android:text="Promotionak Earning "
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                                <TextView
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins"
+                                    android:gravity="center"
+                                    android:text="$36.00"
+                                    android:textColor="@color/black"
+                                    android:textSize="14sp" />
+
+                            </RelativeLayout>
+
+                            <View
+                                android:layout_width="match_parent"
+                                android:layout_height="1dp"
+                                android:layout_marginTop="25dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:background="#DDDDDD" />
+
+                            <RelativeLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="18dp"
+                                android:paddingHorizontal="20dp">
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/raleway_semibold"
+                                    android:gravity="center"
+                                    android:text="@string/total_earning"
+                                    android:textColor="@color/black"
+                                    android:textSize="16sp" />
+
+                                <TextView
+                                    android:id="@+id/txtTotalEaring"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_centerVertical="true"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/poppins"
+                                    android:gravity="center"
+                                    android:text="$00"
+                                    android:textColor="@color/black"
+                                    android:textSize="20sp" />
+
+                            </RelativeLayout>
+
+
+
+                        </LinearLayout>
+
+
+                        <androidx.recyclerview.widget.RecyclerView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginVertical="20dp"
+                            android:visibility="gone"
+                            android:id="@+id/rvReneuve"/>
+
+                        <TextView
+                            android:id="@+id/txtNodata"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_centerVertical="true"
+                            android:layout_gravity="center"
+                            android:fontFamily="@font/raleway_semibold"
+                            android:gravity="center"
+                            android:text="@string/no_data_found"
+                            android:layout_marginVertical="30dp"
+                            android:textColor="@color/black"
+                            android:textSize="16sp" />
+
+
+
+
+
+
+
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</LinearLayout>

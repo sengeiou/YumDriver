@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_marginHorizontal="5dp"
+    android:layout_marginVertical="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+    <RelativeLayout
+        android:id="@+id/lytMain"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.yum_driver.utils.MyTextViewBold
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginLeft="20sp"
+            android:textSize="16sp"
+            android:textColor="#000"
+            android:layout_centerVertical="true"/>
+        <RatingBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/rtingbar"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            style="?android:attr/ratingBarStyleSmall"
+            android:isIndicator="true"
+            android:layout_margin="10dp"
+            android:progressTint="#FFEB3B"
+            />
+
+    </RelativeLayout>
+    <com.yum_driver.utils.MyTextView
+        android:id="@+id/txtDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20sp"
+        android:textSize="14sp"
+        android:layout_below="@id/lytMain"
+        android:textColor="@color/grey"
+        android:layout_centerVertical="true"/>
+    <com.yum_driver.utils.MyTextView
+        android:id="@+id/txtDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:layout_marginLeft="20sp"
+        android:textSize="14sp"
+        android:layout_marginTop="10dp"
+        android:layout_below="@id/txtDate"
+        android:textColor="@color/grey"
+        android:layout_marginBottom="10dp"
+        android:layout_centerVertical="true"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

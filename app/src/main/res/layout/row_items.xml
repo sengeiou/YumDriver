@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="10dp"
+    android:layout_marginVertical="3dp"
+    android:background="@color/white"
+    >
+    <com.yum_driver.utils.MyTextViewBold
+        android:id="@+id/txtFoodName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="dsdsggg"
+        android:textSize="14sp"
+        android:textColor="#1D2E5B"
+        />
+    <com.yum_driver.utils.MyTextView
+        android:id="@+id/txtDesc"
+        android:layout_width="match_parent"
+        android:drawablePadding="5dp"
+        android:layout_height="wrap_content"
+        android:text="sdfsdsff"
+        android:textSize="12sp"
+        android:layout_below="@id/txtFoodName"
+        />
+
+    <com.yum_driver.utils.MyTextView
+        android:id="@+id/txtAddonsPrize"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="5436"
+        android:textSize="14sp"
+        android:textColor="#1D2E5B"
+        android:layout_below="@+id/txtDesc"
+        />
+
+    <TextView
+        android:id="@+id/txtPrice"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/poppins"
+        android:layout_alignParentRight="true"
+        android:layout_height="wrap_content"
+        android:text="454546"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        />
+
+    <com.yum_driver.utils.MyTextViewBold
+        android:id="@+id/txtTotal"
+        android:layout_width="wrap_content"
+        android:gravity="center_vertical"
+        android:layout_gravity="center_vertical"
+        android:fontFamily="@font/poppins"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_height="wrap_content"
+        android:text="454546"
+        android:textColor="#333333"
+        android:textSize="12sp"
+        />
+
+</RelativeLayout>

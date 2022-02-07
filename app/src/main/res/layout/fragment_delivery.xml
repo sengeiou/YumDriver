@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Fragments.DeliveryFragment"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textView20"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/raleway_bold"
+        android:text="@string/deliveries"
+        android:textColor="#41527E"
+        android:textSize="20sp" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="@font/raleway_bold"
+        app:tabIndicator="@color/colorAccent"
+        app:tabIndicatorColor="#F47425"
+        app:tabIndicatorHeight="5dp"
+        app:tabSelectedTextColor="#F47425"
+        app:tabTextAppearance="@style/MyCustomTextAppearance"
+        app:tabTextColor="#501D2E5B"
+        />
+    <com.yum_driver.utils.MyEdittext
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#5075BA82"/>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+</LinearLayout>

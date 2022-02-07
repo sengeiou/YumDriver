@@ -1,0 +1,118 @@
+{
+  "project_info": {
+    "project_number": "78243869707",
+    "project_id": "deseos-customer",
+    "storage_bucket": "deseos-customer.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78243869707:android:1fd1752739aa917c63830e",
+        "android_client_info": {
+          "package_name": "com.yum_driver"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78243869707-chtt060a1332j8ub01vemut249kd3nql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACtO2kQLkal4VfJLdzQFCTgXay3AS-mz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78243869707-chtt060a1332j8ub01vemut249kd3nql.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "78243869707-jt7079h7b62bj7ishj0solasnp3m3a3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deseoscustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78243869707:android:47584cd728884f6863830e",
+        "android_client_info": {
+          "package_name": "com.deseos_restaurant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78243869707-chtt060a1332j8ub01vemut249kd3nql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACtO2kQLkal4VfJLdzQFCTgXay3AS-mz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78243869707-chtt060a1332j8ub01vemut249kd3nql.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "78243869707-jt7079h7b62bj7ishj0solasnp3m3a3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deseoscustomer"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78243869707:android:f349755ae93321b663830e",
+        "android_client_info": {
+          "package_name": "com.deseoscustomer"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78243869707-chtt060a1332j8ub01vemut249kd3nql.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyACtO2kQLkal4VfJLdzQFCTgXay3AS-mz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78243869707-chtt060a1332j8ub01vemut249kd3nql.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "78243869707-jt7079h7b62bj7ishj0solasnp3m3a3v.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.deseoscustomer"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

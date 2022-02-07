@@ -1,0 +1,398 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.RevenueActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <androidx.core.widget.NestedScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="52dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginTop="20dp">
+
+                            <ImageView
+                                android:id="@+id/imgBack"
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_back_black_color" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:fontFamily="@font/raleway_bold"
+                                android:gravity="center"
+                                android:text="@string/cuurent_trip_details"
+                                android:textColor="#41527E"
+                                android:textSize="20sp"
+                             ></TextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="270dp"
+                            android:layout_marginTop="10dp"
+                            android:background="@color/grey">
+
+                            <fragment
+                                android:id="@+id/map"
+                                android:name="com.google.android.gms.maps.SupportMapFragment"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"></fragment>
+
+                        </RelativeLayout>
+
+<!--                        <ScrollView-->
+<!--                            android:layout_width="match_parent"-->
+<!--                            android:layout_height="wrap_content"-->
+<!--                            android:layout_marginBottom="20dp"-->
+<!--                            android:scrollbars="none">-->
+
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:orientation="vertical">
+
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="20dp"
+                                    android:background="@drawable/curve_grey"
+                                    android:orientation="vertical"
+                                    android:paddingVertical="20dp">
+
+
+                                    <LinearLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:gravity="center_horizontal"
+                                        android:orientation="horizontal">
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginRight="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/txtTime"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/poppins"
+                                                android:text="11.30  Min"
+                                                android:textColor="#1D2E5B"
+                                                android:textSize="16sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="8dp"
+                                                android:fontFamily="@font/raleway_medium"
+                                                android:text="@string/duration"
+                                                android:textColor="#1D2E5B"
+                                                android:textSize="16sp" />
+                                        </LinearLayout>
+
+                                        <View
+                                            android:layout_width="1dp"
+                                            android:layout_height="match_parent"
+                                            android:layout_marginHorizontal="20dp"
+                                            android:background="#CFCFCF" />
+
+
+                                        <LinearLayout
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginLeft="20dp"
+                                            android:orientation="vertical">
+
+                                            <TextView
+                                                android:id="@+id/txtKm"
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_gravity="center"
+                                                android:fontFamily="@font/poppins"
+                                                android:text="10.30 Km"
+                                                android:textColor="#1D2E5B"
+                                                android:textSize="16sp" />
+
+                                            <TextView
+                                                android:layout_width="wrap_content"
+                                                android:layout_height="wrap_content"
+                                                android:layout_centerInParent="true"
+                                                android:layout_centerVertical="true"
+                                                android:layout_gravity="center"
+                                                android:layout_marginTop="8dp"
+                                                android:fontFamily="@font/raleway_medium"
+                                                android:text="@string/distance"
+                                                android:textColor="#1D2E5B"
+                                                android:textSize="16sp" />
+                                        </LinearLayout>
+
+
+                                    </LinearLayout>
+
+
+                                </LinearLayout>
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="21dp"
+                                    android:orientation="vertical">
+
+                                    <TextView
+                                        android:id="@+id/txtAmt"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="$ 24.06"
+                                        android:textColor="#FF5A5F"
+                                        android:textSize="30sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtOrderNo"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerInParent="true"
+                                        android:layout_centerVertical="true"
+                                        android:layout_gravity="center"
+                                        android:layout_marginTop="7dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:text=""
+                                        android:textColor="#1D2E5B"
+                                        android:textSize="12sp"
+                                        android:textStyle="bold" />
+
+                                    <View
+                                        android:layout_width="match_parent"
+                                        android:layout_height="1dp"
+                                        android:layout_marginVertical="20dp"
+                                        android:background="#CCCCCC" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="@string/earning_details"
+                                        android:textColor="#8F8F8F"
+                                        android:textSize="16sp"
+                                        />
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="14dp">
+
+                                        <TextView
+                                            android:id="@+id/txtTravel"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="match_parent"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="@string/fare"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/txtFareAmt"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/poppins"
+                                            android:gravity="center"
+                                            android:text="$15.00"
+                                            android:textColor="@color/black"
+                                            android:textSize="12sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="11dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/raleway"
+                                            android:gravity="center"
+                                            android:text="@string/admin_fees"
+                                            android:textColor="#000000"
+                                            android:textSize="12sp" />
+
+                                        <TextView
+                                            android:id="@+id/txtAdminFees"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/poppins"
+                                            android:gravity="center"
+                                            android:text="$1.00"
+                                            android:textColor="#59677C"
+                                            android:textSize="10sp" />
+
+                                    </RelativeLayout>
+
+                                    <RelativeLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_marginTop="15dp">
+
+                                        <TextView
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/raleway_semibold"
+                                            android:gravity="center"
+                                            android:text="@string/total_payout"
+                                            android:textColor="#1D2E5B"
+                                            android:textSize="16sp" />
+
+                                        <TextView
+                                            android:id="@+id/txtTotalPayout"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:layout_alignParentRight="true"
+                                            android:layout_centerVertical="true"
+                                            android:layout_gravity="center"
+                                            android:fontFamily="@font/poppins_medium"
+                                            android:gravity="center"
+                                            android:text="$12.00"
+                                            android:textColor="#1D2E5B"
+                                            android:textSize="16sp" />
+
+                                    </RelativeLayout>
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="30dp"
+                                        android:fontFamily="@font/raleway_medium"
+                                        android:text="@string/from_restaurant"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtRestName"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="Burger King"
+                                        android:textColor="#000000"
+                                        android:textSize="14sp"
+                                        />
+
+                                    <TextView
+                                        android:id="@+id/txtrestAddr"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="6dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:text="In front of BYK College, next to Big bazaar\nCollege Road Nashik. 422013"
+                                        android:textColor="#59677C"
+                                        android:textSize="11sp" />
+
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="18dp"
+                                        android:fontFamily="@font/raleway_medium"
+                                        android:text="@string/to_customer"
+                                        android:textColor="@color/purple_500"
+                                        android:textSize="15sp" />
+
+                                    <TextView
+                                        android:id="@+id/txtCustomername"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="8dp"
+                                        android:fontFamily="@font/poppins_medium"
+                                        android:text="Varsha Krishnani"
+                                        android:textColor="#000000"
+                                        android:textSize="14sp"
+                                      />
+
+                                    <TextView
+                                        android:id="@+id/txtCustomerAddress"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="11dp"
+                                        android:fontFamily="@font/poppins"
+                                        android:text="Plot no, 65, Nilkanteshwar Nagar Ashok Nagar\n Nashik. 42205"
+                                        android:textColor="#59677C"
+                                        android:textSize="11sp" />
+
+                                </LinearLayout>
+
+
+                            </LinearLayout>
+<!--                        </ScrollView>-->
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.core.widget.NestedScrollView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Ganesh/Deseos Driver/app/src/main/res/layout/dia_permission.xml" value="0.23958333333333334" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/bg_button.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/border_blue.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/border_orange.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/card_bg_orange_filled.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/curve_green.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_bike.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_bike1.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_callaround_red.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_cam.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_check_mark.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_email.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_feedback.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_file.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_leff_arrow.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_logo1.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_logout.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_motorcycle.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_navigator.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_ok.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_online.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_performance.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_profile_setting.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_receiving.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_selected.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_star1.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/ic_support.xml" value="0.2890625" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/drawable/pptheme_switch_track_holo_light.xml" value="0.25462962962962965" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_add_vehical.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_change_password.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_complete_delivery.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_current_order_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_feedback.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_lanuguage_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_login.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_main.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_mishap.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_my_revenue.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_o_t_p_verify.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_performces.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_profile_setting.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_register.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_revenue.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_splash.xml" value="0.18" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_vehical_info.xml" value="0.21203703703703702" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/activity_vehical_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/dia_permission.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/fragment_active_order.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/fragment_closed_order.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/fragment_delivery.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/fragment_notifications.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/fragment_order_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/fragment_profile.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/item_calling_code.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/layout_active_orders.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/layout_order_details.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/layout_order_items_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/order_list_item.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/progress_dialog.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_active_order.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_close_order.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_items.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_language_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_notifications.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_order_item_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_revenue_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_review.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/layout/row_vehical_list.xml" value="0.27291666666666664" />
+        <entry key="..\:/Ganesh/Yum Functional Project/Yum Driver/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.159375" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
